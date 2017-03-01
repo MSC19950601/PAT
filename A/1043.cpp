@@ -110,8 +110,8 @@ int main() {
   } else if (preM == origin) {
     cout << "YES\n";
     for (int i = 0; i < post.size(); i++) {
-      cout << post.at(i);
-      if (i < post.size() - 1)
+      cout << postM.at(i);
+      if (i < postM.size() - 1)
         cout << " ";
     }
   } else {
