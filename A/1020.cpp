@@ -44,7 +44,6 @@ int num_output = 0;
 void BFS(node* root)
 {
     std::queue<node*> que;
-    
     que.push(root);
     while(!que.empty())
     {
