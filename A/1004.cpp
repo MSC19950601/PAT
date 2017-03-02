@@ -17,8 +17,9 @@ void DFS(int index, int h)
         leaf[h]++;
         return;
     }
-    for(int i = 0; i < tree[ind
-    ])
+    for(int i = 0; i < tree[index].size(); i++){
+        DFS(tree[index][i], h + 1);
+    }
 }
 
 
@@ -34,5 +35,9 @@ int main(){
         }
     }
     DFS(1,1);
-
+    cout << leaf[1];
+    for (int i = 2; i <= max_h; i++) {
+        printf(" %d",leaf[i]);
+    }
+    return 0;
 }
