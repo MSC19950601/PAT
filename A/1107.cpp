@@ -63,6 +63,7 @@ int main() {
             ans++;
         }
     }
+    printf("%d\n",ans);
     sort(isRoot + 1, isRoot + n + 1, cmp);
     for (int i = 1; i <= ans; i++) {
         printf("%d", isRoot[i]);
